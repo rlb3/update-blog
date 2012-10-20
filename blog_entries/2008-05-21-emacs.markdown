@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"Emacs\""
+date: 2008-05-21 18:16
+comments: true
+categories: Uncategorized
+---
+So after 8 years as a vim user I'm learning emacs. Why? Because now that I'm more of a programmer than a system admin I want most of the features that emacs has to offer. The hardest part will be turning off the vim reflexes.

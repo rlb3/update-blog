@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"Daylist\""
+date: 2009-03-01 20:58
+comments: true
+categories: code
+---
+I started this practice about eight years ago. Anytime I start to learn a new programming language I write what I call daylist. Basically, a function takes a start day and an end day, then producing the full list of days between wrapping as necessary. I think I read about it on a perl newgroup and have since written version in perl, ruby, smalltalk and clojure. Since this blog is about common lisp I'm posting a link to <a href="http://github.com/rlb3/scripts/blob/b71f0ff886f4f4ce4ab14b81a67b202244a8a6bd/daylist.lisp">daylist.lisp</a>.<div><br /></div><div><br /></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/1621466996203250312-1678517335373727028?l=learning-lisp.blogspot.com' alt='' /></div>

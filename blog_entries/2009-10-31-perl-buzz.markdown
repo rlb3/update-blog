@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"Perl Buzz\""
+date: 2009-10-31 17:58
+comments: true
+categories: Uncategorized
+---
+"Perl Buzz":http://perlbuzz.com/ is a new site whos purpose is to garner some attention for perl. And there using Movable Type 4...

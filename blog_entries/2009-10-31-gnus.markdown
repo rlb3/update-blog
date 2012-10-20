@@ -1,0 +1,12 @@
+---
+layout: post
+title: "\"Gnus\""
+date: 2009-10-31 18:04
+comments: true
+categories: Uncategorized
+---
+<p>I've been trying to get gnus to work with gmail forever. <a href="http://wired-news.blogspot.com/2008/01/configuration-of-gmail-on-gnusemacs_09.html">This</a> is the only tutorial that worked for me.</p>
+<p>Also to send mail through gmail you will need "<strong>starttls</strong>" or "<strong>gnutls</strong>" installed otherwise you will get this error:</p>
+<p><em>530 5.7.0 Must issue a STARTTLS command first. y5sm79445tia.17</em></p>
+
+<div class="zemanta-pixie" style="margin-top:10px;height:15px;"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=5c8013b9-38cc-4c6b-ae66-029cdfccb8ee" style="border:none;float:right;" /><span class="zem-script more-related pretty-attribution"></span></div>

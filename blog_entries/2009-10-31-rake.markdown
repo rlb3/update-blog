@@ -1,0 +1,31 @@
+---
+layout: post
+title: "\"Rake\""
+date: 2009-10-31 17:55
+comments: true
+categories: Uncategorized
+---
+Rake, if you couldn't tell by the name, is Ruby mAKE . You can make tasks and set dependencies all in ruby. Here is an example:
+
+Rakefile:
+
+task :hello do
+  print "Hello, "
+end
+
+task :world =&gt; [:hello] do
+  puts "World!!"
+end
+ 
+
+Then from the command line:
+<pre>rake world</pre>
+
+and you get:
+<pre>(in /Users/robert/ruby)
+Hello, World!!
+</pre>
+
+As you see by running the world task it runs its dependency before hand. Rake also does file time dependency. So if you build a task that needs files to be built it checks the file stamp and determines if any thing has changed and the files need to be rebuilt just like make and unlike ant.
+
+Anyway, here are the official "docs":http://docs.rubyrake.org/ for rake. And here is the "API":http://rake.rubyforge.org/.

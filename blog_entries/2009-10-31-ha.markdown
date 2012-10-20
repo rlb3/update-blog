@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"Ha!\""
+date: 2009-10-31 18:03
+comments: true
+categories: Uncategorized
+---
+![editors](http://imgs.xkcd.com/comics/real_programmers.png)

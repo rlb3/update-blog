@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"Irssi\""
+date: 2007-08-18 22:33
+comments: true
+categories: Uncategorized
+---
+"Irssi":http://irssi.org/ is a terminal based irc client that is "scriptable in perl":http://juerd.nl/site.plp/irssiscripttut.

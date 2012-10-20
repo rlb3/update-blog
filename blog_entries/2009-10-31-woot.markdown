@@ -1,0 +1,10 @@
+---
+layout: post
+title: "\"Woot!!!\""
+date: 2009-10-31 18:02
+comments: true
+categories: Uncategorized
+---
+<p>I hit 70 in World of Warcraft!!!!</p>
+
+<div class="zemanta-pixie" style="margin-top:10px;height:15px;"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=edd05bdb-b4cb-432d-b4d6-e35225493726" style="border:none;float:right;" /><span class="zem-script more-related pretty-attribution"></span></div>

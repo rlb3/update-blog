@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"sbcl\""
+date: 2009-03-01 11:39
+comments: true
+categories: sbcl
+---
+The lisp compiler I've chosen is <a href="http://www.sbcl.org/">Steel Bank Common Lisp</a>. The main reason is it have built in support for <a href="http://common-lisp.net/project/asdf-install/tutorial/introduction.html">asdf</a>, which is a utility to automatically install lisp packages and their dependencies. The main thing I want to document in this post is my setup for sbcl on Mac OS X.<div><br /></div><div><ul><li>Download the newest version of <a href="http://www.sbcl.org/platform-table.html">sbcl source</a> code tarball</li><li>Once downloaded and extracted created the file "customize-target-features.lisp" in the source directory<br /></li><li>Add the following content to the file<br /></li></ul><div><br />(lambda (features)<br />(flet ((enable (x)<br />(pushnew x features))<br />(disable (x)<br />(setf features (remove x features))))<br />;; Threading support, available only on x86/x86-64 Linux,<br />;; x86 Solaris<br />;; and x86 Mac OS X (experimental).<br />(enable :sb-thread)))<br /><br /><ul><li>run "sh make.sh"</li><li>run "cd doc/manual &amp;&amp; make"</li><li>run "cd ../.."</li><li>run "sudo sh install.sh"</li></ul> The binary gets installed to /usr/local/bin by default<br /><br /></div></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/1621466996203250312-4083518213744366970?l=learning-lisp.blogspot.com' alt='' /></div>

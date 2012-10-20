@@ -1,0 +1,11 @@
+---
+layout: post
+title: "\"Campfire\""
+date: 2009-10-31 17:53
+comments: true
+categories: Uncategorized
+---
+"Campfire":link1 is one of the best rails apps I have seen so far. I seems pretty feature complete. To bad you have to pay to keep a chat channel. But "this":link2 this give me hope.
+
+[link1]http://www.campfirenow.com/
+[link2]http://rubyforge.org/projects/rtrails/

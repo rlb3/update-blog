@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"Woot!!!\""
+date: 2008-03-15 09:51
+comments: true
+categories: Uncategorized
+---
+I hit 70 in World of Warcraft!!!!

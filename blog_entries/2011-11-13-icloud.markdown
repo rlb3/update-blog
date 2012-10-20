@@ -1,0 +1,8 @@
+---
+layout: post
+title: "\"iCloud\""
+date: 2011-11-13 19:59
+comments: true
+categories: iCloudUncategorized
+---
+Funny how just adding the ability to sync between all my idevices makes apps so much more useful. I had down loaded all the iWork apps for iPad. O never used them. I used pages when I was taking a music business class in fall 2010 but that was the only exception. Now that I can sync between my iPad and iPhone over the air I think I will be using them more often.

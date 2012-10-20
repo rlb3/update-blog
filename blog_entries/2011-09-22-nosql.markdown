@@ -1,0 +1,65 @@
+---
+layout: post
+title: "\"NoSQL\""
+date: 2011-09-22 03:34
+comments: true
+categories: Databasedatabasesnosql
+---
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">SQL Past...</h2>
+<div id="text-1" class="outline-text-2">
+
+I'm an SQL guy. I've been writing SQL for a little over ten years. I don't know everything but I'm pretty comfortable with writing queries.
+
+Like many SQL programmers you learn about ORMs and realize that they are a better way to deal with SQL in your programming language than manipulating a semi-structured string. And "string" being the operative word. Any time you write one language in another you lose some of the niceties of your editor. A big issue for me is syntax highlighting. Syntax highlighting can be an early warning system for basic bugs. You make have forgotten to add a quote at the end of a string, but the fact that the syntax highlighting is strangely colored for a section of code is a warning you get even before you run your code. But when straight SQL is used as a string you get none of the benefits not even code indention. Both of these problems are solved by using a ORM.
+
+</div>
+</div>
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">Looking for the lazy way out...</h2>
+<div id="text-2" class="outline-text-2">
+
+Here recently, I've been looking for a way to make data persistence easier to setup. When I'm doing exploratory hacking I don't want to setup a database schema that can change very quickly while I'm testing different approaches to modeling the data. I need something that is more fluid.
+
+</div>
+</div>
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">Bye Bye SQL...</h2>
+<div id="text-3" class="outline-text-2">
+
+There has been a movement in the last couple of years that is looking for alternatives to the relational database model. For those curious there is plenty of information on the topic of NoSQL<sup><a class="footref" name="fnr.1" href="#fn.1"></a>1</sup>. I've looked at a few of the NoSQL implementations and the two that have caught my eye are CouchDB and MongoDB
+
+</div>
+</div>
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4">CouchDB...</h2>
+<div id="text-4" class="outline-text-2">
+
+CouchDB is an Apache project that is built in Erlang<sup><a class="footref" name="fnr.2" href="#fn.2"></a>2</sup>. The thing I find most fascinating about CouchDB is that the protocol for interacting with the database is implemented as a RESTful HTTP API. With that one design decision, every programming language that can access the web has all they need to access the database. As and emacs fan this is very exciting because emacs has a great http<sup><a class="footref" name="fnr.3" href="#fn.3"></a>3</sup> library that I can use to execute queries. The downside for me is that CouchDB depends heavily on map/reduce in order to aggregate data. This is very new to me and I'm still having some trouble wrapping my head around it.
+
+</div>
+</div>
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5">MongoDB...</h2>
+<div id="text-5" class="outline-text-2">
+
+MongoDB is very similar to CouchDB but the biggest plus for me is it's query language. MongoDB does have the ability to use map/reduce but it has a simple javascript based query language that is easy to use and understand. On the the down side, MongoDB uses a binary protocol that requires a compiled driver for any language that wants to access the database. While this isn't too big a problem because all the languages I know have drivers, emacs can't access the database directly.
+
+</div>
+</div>
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6">Conclusion...</h2>
+<div id="text-6" class="outline-text-2">
+
+Right now I'm leaning toward CouchDB. Mainly because of the rest API. I plan to build an application soon to test it out and get more familiar with it. And if I have the time, I will try to write an app for MongoDB as well. If I do that I'm guessing I will have lots of info for a new blog post.
+<div id="footnotes">
+<h2 class="footnotes">Footnotes:</h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn.1" href="#fnr.1"></a>1</sup> <a href="http://en.wikipedia.org/wiki/NoSQL">http://en.wikipedia.org/wiki/NoSQL</a></p>
+<p class="footnote"><sup><a class="footnum" name="fn.2" href="#fnr.2"></a>2</sup> <a href="http://www.erlang.org/">http://www.erlang.org/</a></p>
+<p class="footnote"><sup><a class="footnum" name="fn.3" href="#fnr.3"></a>3</sup> <a href="http://www.emacswiki.org/emacs/UrlPackage">http://www.emacswiki.org/emacs/UrlPackage</a></p>
+
+</div>
+</div>
+</div>
+</div>
