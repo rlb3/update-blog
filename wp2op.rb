@@ -13,7 +13,7 @@ doc.xpath('//item').each do |item|
   title    = item.xpath('title').text
   date     = DateTime.parse(item.xpath('pubDate').text)
   category = item.xpath('category').text
-  content  =  item.xpath('content:encoded').text
+  content  = item.xpath('content:encoded').text
 
   if !content.empty?
     filename = "#{blog_dir}/#{date.strftime('%Y-%m-%d')}-#{title.to_url}.markdown"
