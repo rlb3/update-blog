@@ -21,8 +21,8 @@ doc.xpath('//item').each do |item|
     open(filename, 'w') do |post|
       post.puts "---"
       post.puts "layout: post"
-      post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-      post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+      post.puts "title: " + "\"#{title.gsub(/&/,'&amp;')}\"".inspect
+      post.puts "date: #{date.strftime('%Y-%m-%d %H:%M')}"
       post.puts "comments: true"
       post.puts "categories: " + category
       post.puts "---"
